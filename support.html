@@ -3,48 +3,100 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="桌台计费助手使用帮助、计费说明、数据导出恢复及客服联系方式。">
-  <title>技术支持 · 桌台计费助手</title>
+  <meta name="description" content="桌台计费通使用帮助、计费说明、数据导出恢复及客服联系方式。" data-zh="桌台计费通使用帮助、计费说明、数据导出恢复及客服联系方式。" data-en="Table Billing help, billing rules, data export and restoration, and support contact details.">
+  <title data-zh="技术支持 · 桌台计费通" data-en="Support · Table Billing">技术支持 · 桌台计费通</title>
+  <script src="site.js"></script>
   <link rel="stylesheet" href="site.css">
 </head>
 <body>
 <main>
+  <div class="language-picker" role="group" aria-label="语言 / Language" hidden>
+    <button type="button" data-set-language="auto" aria-pressed="true">自动 / Auto</button>
+    <button type="button" data-set-language="zh" lang="zh-Hans" aria-pressed="false">中文</button>
+    <button type="button" data-set-language="en" lang="en" aria-pressed="false">English</button>
+  </div>
+  <div data-language="zh" lang="zh-Hans">
   <nav aria-label="页面导航"><a href="support.html" aria-current="page">技术支持</a><a href="privacy.html">隐私政策</a></nav>
-  <h1>桌台计费助手 · 技术支持</h1>
+  <h1>桌台计费通 · 技术支持</h1>
   <p class="lead">在 iPhone 和 iPad 上完成开台计时、商品记账、结账核对与历史查账。适用于 iOS / iPadOS 17 及以上版本。</p>
 
   <h2>如何开始使用？</h2>
   <ol>
-    <li>首次启动是空账本。在“门店”中添加桌台，填写名称和计费规则；可在“设置”中修改门店名称。</li>
-    <li>在“商品”中添加商品，设置售价；没有商品也可单独进行桌台计时结账。</li>
-    <li>点击空闲桌台，选择按时计费或已有套餐，核对开台时间后确认开台。</li>
+    <li>首次启动是空账本。在“门店”中添加包间或桌台，填写名称和计费规则，分类可不填；可在“设置”中修改门店名称。</li>
+    <li>在“商品”中添加商品，设置售价；没有商品也可单独进行包间或桌台计时结账。</li>
+    <li>点击空闲包间或桌台，选择按时计费或已有套餐，核对开台时间后确认开台。</li>
     <li>在消费页添加商品、调整数量，并在结束时选择“核对并结账”。</li>
     <li>核对费用、优惠、实收金额及备注，确认已收款后保存账单；历史记录可在“账本”中查看。</li>
   </ol>
 
   <h2>按时收费、套餐和特殊时段如何计算？</h2>
-  <p>每张桌台可独立保存按时规则和多个套餐，开台时选择本次使用的一种方式。套餐包含时长以小时填写，例如 1.5 表示 1 小时 30 分钟；套餐时长内收固定套餐价，超时部分另计。</p>
-  <p>计费会按设定的最低时长和步长进位。“免费阈值”是整次消费的免计时费门槛，超过后按完整时长计费，不扣除免费分钟。单次封顶仅限制计时费，商品费用另计。</p>
-  <p>特殊时段按星期重复，可跨午夜，并替换命中时段的小时价。跨午夜时，星期归属于该时段的开始日；套餐的特殊价仅影响超时部分。每笔消费保留开台时的规则和加购时的商品价格，后续改价不改变这些记录。</p>
+  <p>每个包间或桌台可独立保存按时规则和多个套餐，开台时选择本次使用的一种方式。套餐包含时长以小时填写，例如 1.5 表示 1 小时 30 分钟；套餐时长内收固定套餐价，超时部分另计。新建计费设置的金额默认留空，编辑时保留已有金额。</p>
+  <p>计费会按设定的最低时长和计费周期补足。例如每 30 分钟计费时，不足 30 分钟按 30 分钟计算。单次封顶仅限制计时费，商品费用另计。</p>
+  <p>特殊时段按星期重复，可跨午夜，并替换命中时段的小时价。跨午夜时，星期归属于该时段的开始日；套餐的特殊价仅影响超时部分。修改计费规则并保存包间/桌台后，立即从原开台时间按新规则重算正在消费的时长费；已加购商品的单价、数量及备注保持不变，已结账账单保留结账时的规则与金额。按时价修改不会替换已选套餐的固定价，正在使用的套餐不能删除。</p>
+
+  <h2>免费版数量和购买如何计算？</h2>
+  <p>免费版包间与桌台合计最多 2 个，停用也计入数量。可在“设置 → 包间/桌台数量”一次购买解除数量限制，或恢复已有购买；其他功能与免费版一致。购买状态独立于营业数据，不通过 JSON 文件迁移。购买与恢复由 Apple 系统商店处理。</p>
 
   <h2>“应付”“实收”和收入统计有什么区别？</h2>
   <p>应付根据计时费、商品费及优惠计算，实收记录您确认已收到的金额。收入统计以实收为准，按结账日期归属。应用不发起在线支付，确认结账不会向顾客扣款；分享的文字消费凭证也不是税务发票。</p>
 
   <h2>如何导出和迁移数据？</h2>
-  <p>进入“设置 → 导出数据”，勾选桌台、商品或账单（至少一类），生成 JSON 文件并保存或分享。每类包含该类型的全部记录，桌台同时包含进行中的消费。请定期保存需要留存的数据文件。</p>
+  <p>进入“设置 → 导出数据”，勾选包间/桌台、商品或账单（至少一类），生成 JSON 文件并保存或分享。每类包含该类型的全部记录，包间/桌台类型同时包含进行中的消费。请定期保存需要留存的数据文件。</p>
   <p>在接收设备进入“设置 → 恢复数据”，选择由本应用导出的 JSON 文件，预览来源和数量后确认。文件包含的类型将完整替换本机对应数据，数量为 0 的类型会清空对应数据；未包含的类型保留。三类全部包含时同时恢复门店名称。恢复前不会自动创建副本，请先导出需要保留的本机数据。</p>
 
   <h2>是否支持多设备同步或自动云备份？</h2>
   <p>当前通过文件在设备间迁移，不提供多设备实时同步或应用自建的自动云备份。您可主动将导出文件保存到自己选择的文件服务；系统设备备份行为取决于设备设置。</p>
 
   <h2>无法读取账本或恢复文件时怎么办？</h2>
-  <p>如提示本机账本无法读取，应用会保留原账本文件并阻止常规写入，可用包含桌台、商品和账单三类数据的有效导出文件恢复。请先保留原设备和已有文件，不要通过删除 App 来排查数据问题。当前恢复功能读取新的数据导出格式，旧版备份格式不能直接导入。</p>
+  <p>如提示本机账本无法读取，应用会保留原账本文件并阻止常规写入，可用包含包间/桌台、商品和账单三类数据的有效导出文件恢复。请先保留原设备和已有文件，不要通过删除 App 来排查数据问题。当前恢复功能读取新的数据导出格式，旧版备份格式不能直接导入。</p>
   <p>如仍无法处理，请发送报错文字、操作步骤、App 版本、设备型号和系统版本至页面底部的联系邮箱。无需发送完整营业账本；如确需提供示例，请先使用测试数据或移除无关信息。</p>
 
   <h2>如何删除本机数据？</h2>
-  <p>可在应用中编辑或删除支持管理的桌台、商品及图片；当前不提供逐笔删除历史账单。若需移除整个本机账本，可在设备设置中选择“删除 App”，而非保留数据的“卸载 App”。导出文件、分享副本及外部备份需在对应位置另行删除。</p>
+  <p>可在应用中编辑或删除支持管理的包间、桌台、商品及图片；当前不提供逐笔删除历史账单。若需移除整个本机账本，可在设备设置中选择“删除 App”，而非保留数据的“卸载 App”。导出文件、分享副本及外部备份需在对应位置另行删除。</p>
   <p>了解更多数据处理方式，请阅读<a href="privacy.html">隐私政策</a>。</p>
   <footer>联系邮箱：<a href="mailto:731652307@qq.com">731652307@qq.com</a></footer>
+  </div>
+  <div data-language="en" lang="en">
+  <nav aria-label="Page navigation"><a href="support.html" aria-current="page">Support</a><a href="privacy.html">Privacy Policy</a></nav>
+  <h1>Table Billing · Support</h1>
+  <p class="lead">Start timed sessions, record product sales, review checkout amounts, and look up past receipts on iPhone and iPad. Requires iOS / iPadOS 17 or later.</p>
+
+  <h2>How do I get started?</h2>
+  <ol>
+    <li>The app starts with an empty ledger. In “Venue”, add a room or table and enter its name and billing rules. Categories are optional. You can change the venue name in “Settings”.</li>
+    <li>Add products and set their prices in “Products”. You can also time and settle a room or table session without adding any products.</li>
+    <li>Tap an available room or table, choose hourly billing or an existing package, check the start time, and confirm the session.</li>
+    <li>Add products and adjust quantities on the session screen. When the session ends, select “Review &amp; Settle”.</li>
+    <li>Check the charges, discount, amount received, and notes. Save the receipt after confirming that payment has been received. You can view past receipts in “Ledger”.</li>
+  </ol>
+
+  <h2>How are hourly charges, packages, and special time rates calculated?</h2>
+  <p>Each room or table can have its own hourly billing rules and multiple packages. Choose one billing method when starting a session. Enter package durations in hours; for example, 1.5 means 1 hour and 30 minutes. The fixed package price covers the included duration, and overtime is charged separately. Amount fields are blank by default when creating billing settings; existing amounts are retained when editing.</p>
+  <p>Billable time is rounded up according to the configured minimum duration and billing interval. For example, with a 30-minute billing interval, a period shorter than 30 minutes is charged as 30 minutes. The per-session cap applies only to time charges; products are charged separately.</p>
+  <p>Special time rates repeat by weekday, can run past midnight, and replace the hourly rate during the matching period. For an overnight period, the weekday refers to the day on which the period starts. For packages, special rates apply only to overtime. When you change billing rules and save a room or table, the time charge for an active session is immediately recalculated from its original start time using the new rules. Prices and quantities of products already added, and session notes, stay unchanged. Settled receipts retain the rules and amounts recorded at checkout. Changing an hourly rate does not replace the fixed price of the selected package. A package currently in use cannot be deleted.</p>
+
+  <h2>What is the free limit, and how do purchases work?</h2>
+  <p>The free edition supports a combined total of two rooms and tables, including disabled entries. In “Settings → Room &amp; Table Limit”, you can make a one-time purchase to remove this limit or restore an existing purchase. All other features are the same as in the free edition. Purchase status is independent of business data and does not transfer through JSON files. Purchases and restoration are handled by Apple’s system store.</p>
+
+  <h2>What is the difference between the amount due, amount received, and income totals?</h2>
+  <p>The amount due is calculated from time charges, product charges, and discounts. The amount received records the payment you confirm you have received. Income totals use the amount received and are grouped by checkout date. The app does not process online payments, and confirming checkout does not charge the customer. Shared text receipts are not tax invoices.</p>
+
+  <h2>How do I export and transfer data?</h2>
+  <p>Go to “Settings → Export Data” and select rooms/tables, products, or receipts (at least one category). Generate a JSON file, then save or share it. Each selected category includes all records of that type. Rooms/tables also include active sessions. Save data files regularly for records you want to keep.</p>
+  <p>On the receiving device, go to “Settings → Restore Data”, select a JSON file exported by this app, review the source and record counts, then confirm. Each category included in the file completely replaces the corresponding local data. An included category with zero records clears that category locally; categories not included are kept. The venue name is also restored when all three categories are included. A copy is not created automatically before restoration, so export any local data you want to keep first.</p>
+
+  <h2>Does the app support multi-device sync or automatic cloud backup?</h2>
+  <p>Data is currently transferred between devices through files. The app does not provide real-time multi-device sync or its own automatic cloud backup. You can choose to save exported files to a file service. System device backup behavior depends on your device settings.</p>
+
+  <h2>What should I do if the ledger or a restore file cannot be read?</h2>
+  <p>If the app reports that the local ledger cannot be read, it preserves the original ledger file and blocks normal writes. You can restore it using a valid export file containing all three categories: rooms/tables, products, and receipts. Keep the original device and existing files. Do not delete the app to troubleshoot data problems. Restoration currently reads the new data export format; files in the old backup format cannot be imported directly.</p>
+  <p>If you still need help, send the error text, steps to reproduce it, app version, device model, and operating system version to the contact email at the bottom of this page. You do not need to send your complete business ledger. If an example is necessary, use test data or remove unrelated information first.</p>
+
+  <h2>How do I delete local data?</h2>
+  <p>You can edit or delete rooms, tables, products, and images where the app supports these actions. Individual historical receipts cannot currently be deleted. To remove the entire local ledger, choose “Delete App” in device settings, rather than “Offload App”, which retains data. Exported files, shared copies, and external backups must be deleted separately from their respective locations.</p>
+  <p>For more information about data handling, read the <a href="privacy.html">Privacy Policy</a>.</p>
+  <footer>Contact email: <a href="mailto:731652307@qq.com">731652307@qq.com</a></footer>
+  </div>
 </main>
 </body>
 </html>
