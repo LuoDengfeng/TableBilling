@@ -3,20 +3,27 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="桌台计费助手隐私政策：本机数据处理、照片选择、文件分享及数据管理。">
-  <title>隐私政策 · 桌台计费助手</title>
+  <meta name="description" content="桌台计费通隐私政策：本机数据处理、照片选择、文件分享及数据管理。" data-zh="桌台计费通隐私政策：本机数据处理、照片选择、文件分享及数据管理。" data-en="Table Billing Privacy Policy: on-device data, photo selection, file sharing, and data management.">
+  <title data-zh="隐私政策 · 桌台计费通" data-en="Privacy Policy · Table Billing">隐私政策 · 桌台计费通</title>
+  <script src="site.js"></script>
   <link rel="stylesheet" href="site.css">
 </head>
 <body>
 <main>
+  <div class="language-picker" role="group" aria-label="语言 / Language" hidden>
+    <button type="button" data-set-language="auto" aria-pressed="true">自动 / Auto</button>
+    <button type="button" data-set-language="zh" lang="zh-Hans" aria-pressed="false">中文</button>
+    <button type="button" data-set-language="en" lang="en" aria-pressed="false">English</button>
+  </div>
+  <div data-language="zh" lang="zh-Hans">
   <nav aria-label="页面导航"><a href="support.html">技术支持</a><a href="privacy.html" aria-current="page">隐私政策</a></nav>
-  <h1>桌台计费助手隐私政策</h1>
-  <p class="lead">桌台计费助手是一款在本机进行桌台计时、商品记账与账单管理的应用，无需注册账号。当前版本不通过自有服务器或第三方 SDK 收集您的营业数据，不提供广告或广告追踪。</p>
+  <h1>桌台计费通隐私政策</h1>
+  <p class="lead">桌台计费通是一款在本机进行包间与桌台计时、商品记账与账单管理的应用，无需注册账号。当前版本不通过自有服务器或第三方 SDK 收集您的营业数据，不提供广告或广告追踪。</p>
 
   <h2>一、在设备上处理的数据与用途</h2>
   <p>为提供计费、结账、历史查账和数据迁移功能，应用会在设备的应用存储空间中保存您录入或导入的下列信息：</p>
   <ul>
-    <li>门店名称；桌台的名称、分类、图片、计费规则、套餐与特殊时段价格。</li>
+    <li>门店名称；包间与桌台的名称、分类、图片、计费规则、套餐与特殊时段价格。</li>
     <li>商品的名称、分类、图片、售价和销售状态。</li>
     <li>进行中的消费、起止时间、商品数量、金额优惠或折扣、应付及实收金额、备注。</li>
     <li>历史账单、消费明细、结账时间以及账单对应的计费和价格记录。</li>
@@ -24,29 +31,76 @@
   <p>这些信息用于在设备上计算费用、保存经营记录、展示统计和生成用户选择的导出文件或消费凭证。开发者无法通过本应用远程查看或修改您的本机账本。请仅在备注中填写业务所需信息，避免录入无关的个人敏感信息。</p>
 
   <h2>二、图片与文件访问</h2>
-  <p>添加桌台或商品图片时，应用使用系统照片选择器，只获取您主动选择的图片并保存用于展示，不扫描整个照片图库，不使用相机、麦克风、通讯录或定位信息。</p>
+  <p>添加包间、桌台或商品图片时，应用使用系统照片选择器，只获取您主动选择的图片并保存用于展示，不扫描整个照片图库，不使用相机、麦克风、通讯录或定位信息。</p>
   <p>恢复数据时，应用通过系统文件选择器读取您选择的 JSON 文件，校验并展示文件内容概况；只有在您确认后，才会替换文件包含类型的本机数据。</p>
 
   <h2>三、导出、分享与系统服务</h2>
-  <p>仅当您主动生成数据文件或分享消费凭证时，应用才会将所选内容交给系统保存或分享界面，由您决定接收方。导出文件包含门店名称、导出时间和所选类型的全部数据；桌台数据还包含进行中的消费，账单数据包含明细和备注。文字消费凭证可能包含桌台名称、消费时间、商品、金额及备注。</p>
+  <p>仅当您主动生成数据文件或分享消费凭证时，应用才会将所选内容交给系统保存或分享界面，由您决定接收方。导出文件包含门店名称、导出时间和所选类型的全部数据；包间/桌台数据还包含进行中的消费，账单数据包含明细和备注。文字消费凭证可能包含包间或桌台名称、消费时间、商品、金额及备注。</p>
   <p>您可以选择“文件”、隔空投送、iCloud Drive、第三方文件服务或其他分享目标。这些由您选择的系统或第三方服务按其各自规则处理数据。应用没有开发者运营的云同步或云备份服务；设备的系统备份、照片下载及文件提供商行为可能受您的 Apple 账号和设备设置影响。</p>
   <p>开发者不通过本应用向广告商、分析服务或数据经纪商发送、出售或出租您的营业数据，也不集成第三方广告、行为分析、崩溃统计或登录 SDK。</p>
 
-  <h2>四、数据保存、管理与删除</h2>
-  <p>营业数据保存在您的设备上，供后续记账和查账使用。您可以使用应用内已有的编辑、删除功能管理相应桌台、商品及图片；已结账的历史账单保留其原有记录，当前不提供逐笔删除历史账单或一键清空账本功能。</p>
+  <h2>四、购买与系统商店</h2>
+  <p>免费版的包间与桌台合计最多 2 个，停用也计入数量；您可通过 Apple 应用内购买一次解锁数量限制，并恢复已有购买。购买、退款及付款信息由 Apple 处理，应用只使用系统提供的购买状态确认功能权限，不获取您的银行卡或 Apple 账户密码。购买状态独立于营业账本，不随 JSON 数据文件转移。</p>
+
+  <h2>五、数据保存、管理与删除</h2>
+  <p>营业数据保存在您的设备上，供后续记账和查账使用。您可以使用应用内已有的编辑、删除功能管理相应包间、桌台、商品及图片；已结账的历史账单保留其原有记录，当前不提供逐笔删除历史账单或一键清空账本功能。</p>
   <p>如需删除本机应用数据，可在 iOS / iPadOS 中选择“删除 App”；仅“卸载 App”可能保留文稿与数据。已导出或分享的文件，以及系统或第三方服务保存的副本，不会随删除 App 一并删除，需在对应位置另行管理。</p>
   <p>您可随时停止选择图片、导入或分享文件，无需提供图片即可使用核心记账功能。开发者没有您的本机账本副本，无法代您恢复丢失的记录或远程删除本机文件。需要协助时，请通过页面底部邮箱联系我们。</p>
 
-  <h2>五、数据保护</h2>
+  <h2>六、数据保护</h2>
   <p>应用使用系统应用沙盒和设备文件保护机制保存账本。请为设备设置合适的访问保护，并定期导出需要留存的数据。JSON 导出文件未设置密码加密，可能包含完整营业明细，请妥善保管，仅分享给您信任的接收方。恢复会替换所含类型的全部本机数据，恢复前请先导出需要保留的记录。</p>
 
-  <h2>六、联系支持时的信息</h2>
+  <h2>七、联系支持时的信息</h2>
   <p>如果您主动通过邮箱联系支持，开发者会收到您的邮箱地址、问题描述及您自愿提供的附件，仅用于回复咨询和处理问题。在完成支持所必要的期间保存这些信息；不再需要时予以删除或匿名化，依法需要保留的除外。您可通过同一邮箱提出查询或删除请求。反馈问题前，请先遮盖附件中的无关个人信息和营业明细。</p>
 
-  <h2>七、适用对象与政策更新</h2>
+  <h2>八、适用对象与政策更新</h2>
   <p>本应用面向门店经营与记账场景，并非专为儿童设计的服务。应用无需提交年龄或身份信息即可使用。</p>
   <p>如功能和数据处理方式发生变化，我们将更新本政策，并按适用要求提供提示或取得相应授权。有关本政策或数据处理的问题，请通过页面底部邮箱联系我们。</p>
   <footer>联系邮箱：<a href="mailto:731652307@qq.com">731652307@qq.com</a></footer>
+  </div>
+  <div data-language="en" lang="en">
+  <nav aria-label="Page navigation"><a href="support.html">Support</a><a href="privacy.html" aria-current="page">Privacy Policy</a></nav>
+  <h1>Table Billing Privacy Policy</h1>
+  <p class="lead">Table Billing is an app for timing room and table sessions, recording product sales, and managing receipts on your device. No account is required. The current version does not collect your business data through developer-operated servers or third-party SDKs, and does not provide advertising or ad tracking.</p>
+
+  <h2>1. Data processed on your device and its purposes</h2>
+  <p>To provide billing, checkout, receipt history, and data transfer, the app saves the following information that you enter or import in its storage on your device:</p>
+  <ul>
+    <li>Your store name; room and table names, categories, images, billing rules, packages, and special time rates.</li>
+    <li>Product names, categories, images, prices, and sale status.</li>
+    <li>Active sessions, start and end times, product quantities, fixed or percentage discounts, amounts due and received, and notes.</li>
+    <li>Past receipts, item details, checkout times, and the billing rules and prices recorded with each receipt.</li>
+  </ul>
+  <p>This information is used to calculate charges, keep business records, display statistics, and generate the data exports or receipts you choose, all on your device. The developer cannot remotely view or change your local ledger through this app. Include only information needed for your business in notes, and avoid entering unrelated sensitive personal information.</p>
+
+  <h2>2. Access to images and files</h2>
+  <p>When you add a room, table, or product image, the app uses the system photo picker. It receives only the images you choose and saves them for display. It does not scan your entire photo library or use your camera, microphone, contacts, or location.</p>
+  <p>When you restore data, the app reads the JSON file you select through the system file picker, validates it, and displays an overview of its contents. It replaces local data in the categories included in the file only after you confirm.</p>
+
+  <h2>3. Exporting, sharing, and system services</h2>
+  <p>The app passes selected content to the system save or share interface only when you choose to generate a data file or share a receipt. You decide who receives it. Exported files include your store name, the export time, and all data in the selected categories. Room/table data also includes active sessions; receipt data includes item details and notes. Text receipts may include the room or table name, session times, products, amounts, and notes.</p>
+  <p>You can choose Files, AirDrop, iCloud Drive, third-party file services, or other sharing destinations. These system or third-party services process data under their own rules. The app does not offer developer-operated cloud synchronization or cloud backup. System device backups, photo downloads, and file provider behavior may depend on your Apple Account and device settings.</p>
+  <p>The developer does not use this app to send, sell, or rent your business data to advertisers, analytics services, or data brokers. The app does not integrate third-party advertising, behavioral analytics, crash reporting, or sign-in SDKs.</p>
+
+  <h2>4. Purchases and the system store</h2>
+  <p>The free edition supports a combined total of up to two rooms and tables, including disabled entries. You can remove this quantity limit with a one-time Apple in-app purchase and restore an existing purchase. Apple handles purchases, refunds, and payment information. The app uses only the purchase status provided by the system to confirm access to the feature; it does not obtain your bank card details or Apple Account password. Purchase status is separate from your business ledger and does not transfer through JSON data files.</p>
+
+  <h2>5. Data retention, management, and deletion</h2>
+  <p>Business data is stored on your device for ongoing bookkeeping and review. You can manage rooms, tables, products, and images using the editing and deletion features available in the app. Settled receipts retain their original records. The app currently does not offer deletion of individual past receipts or a one-tap option to clear the ledger.</p>
+  <p>To remove local app data, choose “Delete App” in iOS / iPadOS. Choosing only “Offload App” may retain documents and data. Exported or shared files and copies saved by system or third-party services are not removed when you delete the app; manage those copies separately where they are stored.</p>
+  <p>You can stop selecting images, importing files, or sharing files at any time. Images are not required to use the core bookkeeping features. The developer does not have a copy of your local ledger and cannot recover lost records or remotely delete local files for you. If you need help, contact us at the email address at the bottom of this page.</p>
+
+  <h2>6. Data protection</h2>
+  <p>The app stores your ledger using the system app sandbox and device file protection. Set appropriate access protection for your device and regularly export data you need to keep. JSON exports are not password-encrypted and may contain complete business details. Keep them secure and share them only with recipients you trust. Restoring data replaces all local data in the included categories, so export any records you want to keep before restoring.</p>
+
+  <h2>7. Information provided when contacting support</h2>
+  <p>If you choose to contact support by email, the developer receives your email address, your description of the issue, and any attachments you voluntarily provide. This information is used only to reply to your inquiry and resolve the issue. It is retained for as long as necessary to provide support, then deleted or anonymized when no longer needed, except where retention is required by law. You can send requests to access or delete this information to the same email address. Before reporting an issue, redact unrelated personal information and business details from attachments.</p>
+
+  <h2>8. Intended users and policy updates</h2>
+  <p>This app is intended for store operations and bookkeeping, and is not a service specifically designed for children. You can use it without submitting your age or identity information.</p>
+  <p>If the app’s features or data processing practices change, we will update this policy and provide notice or obtain the appropriate authorization as required. For questions about this policy or data processing, contact us at the email address below.</p>
+  <footer>Contact email: <a href="mailto:731652307@qq.com">731652307@qq.com</a></footer>
+  </div>
 </main>
 </body>
 </html>
