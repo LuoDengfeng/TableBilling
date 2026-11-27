@@ -1,7 +1,12 @@
 :root { color-scheme: light; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; color: #25382e; background: #f6f7f3; }
 * { box-sizing: border-box; }
+html[lang="zh-Hans"] [data-language="en"], html[lang="en"] [data-language="zh"], [hidden] { display: none !important; }
 body { margin: 0; line-height: 1.85; }
 main { max-width: 800px; margin: 48px auto; padding: 36px 40px; background: #fff; border: 1px solid #dde5dc; border-radius: 18px; }
+.language-picker { display: flex; justify-content: flex-end; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
+.language-picker button { font: inherit; font-size: 14px; line-height: 1.5; padding: 6px 12px; border: 1px solid #dde5dc; border-radius: 8px; color: #22623f; background: #fff; cursor: pointer; }
+.language-picker button[aria-pressed="true"] { color: #fff; background: #22623f; border-color: #22623f; }
+.language-picker button:focus-visible { outline: 2px solid #22623f; outline-offset: 3px; }
 nav { display: flex; flex-wrap: wrap; gap: 12px 24px; padding-bottom: 20px; border-bottom: 1px solid #e3e8e2; font-size: 15px; }
 a { color: #22623f; text-underline-offset: 3px; overflow-wrap: anywhere; }
 h1 { font-size: 30px; line-height: 1.4; margin: 28px 0 12px; }
